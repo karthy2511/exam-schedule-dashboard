@@ -1,8 +1,10 @@
 import streamlit as st
 import pandas as pd
 
+# Set the file path to the Excel file
+file_path = 'EXAM SYLLABUS_COMP_24-25.xlsx'
+
 # Load the Excel file
-file_path = r"C:\Users\NSPIRA\Downloads\EXAM SYLLABUS_COMP_24-25.xlsx"
 data = pd.read_excel(file_path, sheet_name='Sheet1')
 
 # Extract unique dates
